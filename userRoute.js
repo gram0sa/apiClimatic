@@ -3,7 +3,7 @@ var router = express.Router();
  
 router.use(express.static('public'));
 router.get('/HomePage', (req,res) => {
-    res.sendFile(__dirname+'/homePage.html');
+    res.sendFile(__dirname+'/pages/homePage.html');
 })
 
 module.exports = router;
