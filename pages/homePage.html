@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./img/sun1.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<head>
-  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="./img/tent.png" type="image/x-icon">
-  <link rel="stylesheet" href="./style.css">
-</head>
+  <body>
+    <div class="container-fluid">
+      <section class="main">
+        <section class="inputs">
+          <input type="text" placeholder="Enter any city..." id="cityinput" />
+          <input type="submit" value="Submit" id="add" />
+          <button placeholder="submit" id="add"></button>
+        </section>
 
-<body>
-  <div class="container-fluid">
-    <section class="main">
-      <section class="inputs">
-        <input type="text" placeholder="Enter any city..." id="cityinput">
-        <input type="submit" value="Submit" id="add">
-        <button placeholder="submit" id="add"></button>
+        <section class="display">
+          <div class="wrapper">
+            <h2 id="cityoutput"></h2>
+            <div>
+              <p id="description"></p>
+              <img src="./img/nuvem.jpg" class="hide" id="img" />
+            </div>
+            <div>
+              <p id="temp"></p>
+              <img src="./img/termometro.jpg" class="hide" id="img1" />
+            </div>
+            <div>
+              <p id="wind"></p>
+              <img src="./img/vento.jpg" class="hide" id="img2" />
+            </div>
+          </div>
+        </section>
       </section>
-
-      <section class="display">
-        <div class="wrapper">
-          <h2 id="cityoutput"></h2>
-          <p id="description"></p>
-          <p id="temp"></p>
-          <p id="wind"></p>
-        </div>
-      </section>
-    </section>
-
-  </div>
-  <script src="./index.js"></script>
-</body>
-
+    </div>
+    <script src="./index.js"></script>
+  </body>
 </html>
