@@ -31,6 +31,7 @@ btn.addEventListener("click", function () {
     })
 
     .catch((err) => alert("Please enter a City"));
+    setTimeout(() => { limpaInput() }, 200);
 });
 
 inputval.addEventListener("keypress", (e) => {
@@ -56,5 +57,11 @@ inputval.addEventListener("keypress", (e) => {
       })
   
       .catch((err) => alert("Please enter a City"));
+      setTimeout(() => { limpaInput() }, 200);
   };
 });
+
+function limpaInput() {
+  inputval.value = "";
+  inputval.focus();
+}
